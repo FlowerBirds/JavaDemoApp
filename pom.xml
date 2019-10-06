@@ -2,10 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cc.eabour</groupId>
-	<artifactId>JavaDemoApp</artifactId>
-	<packaging>war</packaging>
+	<artifactId>javawarship</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<java.version>1.7</java.version>
@@ -114,7 +113,8 @@
 			<version>4.1.41.Final</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<finalName>webapp</finalName>
-	</build>
+
+	<modules>
+		<module>examples</module>
+	</modules>
 </project>
