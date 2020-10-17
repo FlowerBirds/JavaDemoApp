@@ -1,4 +1,4 @@
-package cc.eabour.learn.gaway;
+package cc.eabour.learn.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
