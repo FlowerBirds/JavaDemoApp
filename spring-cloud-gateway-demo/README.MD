@@ -46,3 +46,48 @@ public class DemogatewayApplication {
 ```
 
 > 以上gateway的描述来源于官网描述，地址：https://spring.io/projects/spring-cloud-gateway#overview
+
+## Gateway的服务注册于发现
+与Nacos集成，POM中添加如下依赖：
+```xml
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+    </dependency>
+
+```
+
+
+## 工程说明
+由于此Maven工程又有自己的父工程，所有通过一下方式来解决SpringBoot的父依赖问题：
+```xml
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.2.10.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
+				<version>${spring-cloud-alibaba-dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+```
+
+这样可以实现多个pom的引入
+
