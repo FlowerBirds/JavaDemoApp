@@ -28,5 +28,6 @@
         <module>examples</module>
         <module>feiq</module>
         <module>spring-cloud-gateway-demo</module>
+        <module>jmh-benchmark-demo</module>
     </modules>
 </project>
