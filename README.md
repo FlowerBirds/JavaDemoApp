@@ -1,4 +1,4 @@
-![javawarship](https://github.com/FlowerBirds/javawarship/blob/master/javawarship.png)
+![javawarship logo](https://github.com/FlowerBirds/javawarship/blob/master/javawarship.png)
 # javawarship
 关于Java的一些DEMO和技术预研
 
